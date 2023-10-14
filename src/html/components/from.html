@@ -1,0 +1,42 @@
+<form class="form form_with-frame " action="">
+    <div class="form__header">
+        <h2>Заказать обратный звонок</h2>
+        <img src="@@webRoot/static/img/emergency-call.png">
+        <p>Оставьте свои контакты - наш специалист свяжется с Вами в рабочее время.</p>
+
+    </div>
+    <div class="form__body  ">
+        <label class="form__field">
+            <input  type="text" name="firs_name" placeholder="Как вас зовут?" title="Как вас зовут?">
+        </label>
+        <label class="form__field form__field_tel">
+            <img src="@@webRoot/static/img/icons/phone.svg" alt="">
+            <input aria-invalid="false"   type="tel" name="phone" value="+ 7 (___)-___-__-__" title="ваш номер телефона">
+        </label>
+<!--        7[0-9]{10}-->
+        <label class="form__field form__field_textarea">
+            <textarea name="massage"  placeholder="Сообщение" title="Сообщение"></textarea>
+        </label>
+        <label class="form__field">
+            <input  type="email" name="email" placeholder="E-mail" title="E-mail">
+        </label>
+        <label class="form__field">
+            <input  type="password" name="password" placeholder="Пароль" title="Пароль">
+        </label>
+        <div class="form__field form__field_radio">
+            <input id ='radio-visitor'  type="radio" name="type_order" value="visitor">
+            <label for="radio-visitor">Оформить заказ как гость</label>
+            <p class="form__help-text blow-text">Быстрое оформление заказа без создания учетной записи</p>
+        </div>
+        <div class="form__field form__field_radio">
+            <input id="radio-registration" type="radio" name="type_order" value="registration">
+            <label for="radio-registration">Оформить заказ как гость</label>
+            <p class="form__help-text blow-text">
+                Создайте учетную запись и используйте её для оформления заказа</p>
+        </div>
+    </div>
+    <div class="form__footer">
+        <input type="submit"  class="blow-button" title="">
+        <a href="#" class="form__text-smail">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</a>
+    </div>
+</form>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<body>
+
+@@include('../components/header.html')
+<main class="container ">
+
+    <section class="sections">
+        <h1 class="sections__head">Доставка заказа</h1>
+    </section>
+    <address class=" send-info">
+        <h5>
+            <img src="@@webRoot/static/img/icons/location.svg">
+            <span>Самовывоз со склада по адресу: УР, г. Ижевск, ул. Пушкинская 290.</span>
+        </h5>
+    </address>
+    @@include('../components/map.html')
+    <section class="sections">
+        <address class="send-info">
+            <h5>
+                <img src="@@webRoot/static/img/icons/delivery.svg">
+                <span>Доставка ведущими Транспортными компаниями</span>
+            </h5>
+            <p>
+                Мы осуществляем доставку любыми транспортными компаниями: Деловые Линии, СДЭК, ПЭК, по установленным тарифам
+                на перевозки. При необходимости осуществляем индивидуальную доставку через другие службы доставки.
+            </p>
+        </address>
+    </section>
+
+    <form class="sections form form_with-frame  sections_head-left" action="">
+        <div class="form__header form__header_while">
+            <h2 class="sections__head">Заказать обратный звонок</h2>
+        </div>
+        <div class="form__body form__body_text-aria-left">
+            <label class="form__field">
+                <input  type="text" name="city-send" placeholder="город отправитель" title="город отправитель">
+            </label>
+            <label class="form__field">
+                <input  type="text" name="city-get" placeholder="город получатель" title="город получатель">
+            </label>
+            <div class="form__field">
+                <p>Вес:</p>
+                <div class="form__amt  amt" data-amt="amt">
+                    <button class="amt__subtract" data-amt="subtract">-</button>
+                    <label>  <input class="amt__answer" placeholder="кг" data-amt="answer"></label>
+                    <button class="amt__add" data-amt="add">+</button>
+                </div>
+            </div>
+            <div class="form__field">
+                <p>Длина:</p>
+                <div class="form__amt  amt" data-amt="amt">
+                    <button class="amt__subtract" data-amt="subtract">-</button>
+                    <label>  <input class="amt__answer" placeholder="кг" data-amt="answer"></label>
+                    <button class="amt__add" data-amt="add">+</button>
+                </div>
+            </div>
+            <div class="form__field">
+                <p>Ширина:</p>
+                <div class="form__amt  amt" data-amt="amt">
+                    <button class="amt__subtract" data-amt="subtract">-</button>
+                    <label>  <input class="amt__answer" placeholder="кг" data-amt="answer"></label>
+                    <button class="amt__add" data-amt="add">+</button>
+                </div>
+            </div>
+            <div class="form__field">
+                <p>Высота:</p>
+                <div class="form__amt  amt" data-amt="amt">
+                    <button class="amt__subtract" data-amt="subtract">-</button>
+                    <label>  <input class="amt__answer" placeholder="кг" data-amt="answer"></label>
+                    <button class="amt__add" data-amt="add">+</button>
+                </div>
+            </div>
+            <div class="form__field form__field_radio">
+                <input id ='delivery-to-point-issue-orders'  type="checkbox" name="type_order" value="visitor">
+                <label for="delivery-to-point-issue-orders">доставка до пункта выдачи заказов </label>
+            </div>
+            <div class="form__field form__field_radio">
+                <input id ='delivery-by-courier-to-door'  type="checkbox" name="type_order" value="visitor">
+                <label for="delivery-by-courier-to-door">доставка курьером до двери </label>
+            </div>
+        </div>
+        <div class="form__footer">
+            <input type="submit"  class="blow-button" title="">
+            <a href="#" class="form__text-smail">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</a>
+        </div>
+    </form>
+
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<body>
+
+@@include('../components/header.html')
+<main class="container container_contact">
+
+    @@include('../components/tablets.html')
+    @@include('../components/map.html')
+
+    <form class="sections form form_with-frame  sections_head-left" action="">
+        <div class="form__header form__header_while">
+            <h2 class="sections__head">Заказать обратный звонок</h2>
+        </div>
+        <div class="form__body form__body_text-aria-left">
+            <label class="form__field form__field_textarea form__field_textarea-right">
+                <textarea name="massage"  placeholder="Сообщение" title="Сообщение"></textarea>
+            </label>
+            <label class="form__field">
+                <input  type="text" name="firs_name" placeholder="Как вас зовут?" title="Как вас зовут?">
+            </label>
+            <label class="form__field">
+                <input  type="email" name="email" placeholder="E-mail" title="E-mail">
+            </label>
+            <label class="form__field form__field_tel">
+                <img src="@@webRoot/static/img/icons/phone.svg" alt="">
+                <input aria-invalid="false"   type="tel" name="phone" value="+ 7 (___)-___-__-__" title="ваш номер телефона">
+            </label>
+
+        </div>
+        <div class="form__footer">
+            <input type="submit"  class="blow-button" title="">
+            <a href="#" class="form__text-smail">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</a>
+        </div>
+    </form>
+
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>

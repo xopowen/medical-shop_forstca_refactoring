@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<body>
+
+@@include('../components/header.html')
+<main class="container">
+
+    <form class="sections form form_with-frame  sections_head-left" action="">
+        <div class="form__header form__header_while">
+            <h2 class="sections__head">Войти в личный кабинет</h2>
+            <img src="@@webRoot/static/img/icons/login.svg">
+        </div>
+        <div class="form__body form__body_text-aria-left">
+            <label class="form__field">
+                <input  type="email" name="email" placeholder="E-mail" title="E-mail">
+            </label>
+
+            <label class="form__field">
+                <input type="password" name="password" placeholder="Пароль" title="Пароль">
+                <p class="form__forgotten-password"><a href="#">Забыли пароль?</a></p>
+            </label>
+
+
+        </div>
+        <div class="form__footer">
+            <input type="submit"  class="blow-button" title="">
+            <a href="#" class="form__text-smail">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</a>
+        </div>
+    </form>
+
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>

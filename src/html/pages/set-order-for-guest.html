@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<body>
+
+@@include('../components/header.html')
+<main class="container">
+
+    <section class="forms">
+        <form class="form " action="">
+            <div class="form__header">
+                <h2>Новый покупатель</h2>
+            </div>
+            <div class="form__body">
+                <div class="form__field form__field_radio">
+                    <input id ='radio-visitor'  type="radio" name="type_order" value="visitor">
+                    <label for="radio-visitor">Оформить заказ как гость</label>
+                    <p class="form__help-text blow-text">Быстрое оформление заказа без создания учетной записи</p>
+                </div>
+                <div class="form__field form__field_radio">
+                    <input id="radio-registration" type="radio" name="type_order" value="registration">
+                    <label for="radio-registration">Оформить заказ как гость</label>
+                    <p class="form__help-text blow-text">
+                        Создайте учетную запись и используйте её для оформления заказа</p>
+                </div>
+            </div>
+            <div class="form__footer">
+                <input type="submit"  class="blow-button" title="">
+                <a href="#" class="form__text-smail">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</a>
+            </div>
+        </form>
+        <form class="form " action="">
+            <div class="form__header">
+                <h2>Постоянный клиент</h2>
+            </div>
+            <div class="form__body">
+                <label class="form__field">
+                    <input  type="email" name="email" placeholder="E-mail" title="E-mail">
+                </label>
+                <label class="form__field">
+                    <input  type="password" name="password" placeholder="Пароль" title="Пароль">
+                    <p class="form__forgotten-password"><a   href="#">Забыли пароль?</a></p>
+                </label>
+            </div>
+            <div class="form__footer">
+                <input type="submit"  class="blow-button" title="">
+                <a href="#" class="form__text-smail">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</a>
+            </div>
+        </form>
+
+    </section>
+
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>

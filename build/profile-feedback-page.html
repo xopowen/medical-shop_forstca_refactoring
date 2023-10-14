@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prospecta</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="description" content="Web site created using gulp">
+
+    <link href="./static/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script defer="defer" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=aae3f3e4-374f-420f-a948-677e1a58f577" type="text/javascript"></script>
+    <script defer="defer" src="./static/js/main.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="header opacity">
+    <section class="header__top">
+        <a href="./index.html"><picture><source srcset="./static/img/logo.webp" type="image/webp"><img src="./static/img/logo.png" alt="logo" class="header__img" loading="eager"></picture></a>
+        <button class="button-not-background header__catalog">
+            <picture><source srcset="./static/img/menu%201.webp" type="image/webp"><img src="./static/img/menu%201.png"></picture>
+            <p class="upper-text">каталог</p>
+
+        </button>
+
+        <form class="header__search" action="" method="post">
+            <picture><source srcset="./static/img/loupe%201.webp" type="image/webp"><img src="./static/img/loupe%201.png"></picture>
+            <input name="s" placeholder="Поиск медицинского оборудования" type="search">
+        </form>
+        <address class="address">
+            <p class="blow-text order-call header__order-call">
+                <a href="/request-call-back-page.html" title="Заказать обратный звонок">
+                    <img src="./static/img/icons/phone.svg">Заказать обратный звонок</a>
+            </p>
+            <p class="phone-nomer">8 (3412) 65-08-77</p>
+        </address>
+        <article class="header__network network">
+            <picture><source srcset="./static/img/viber%20.webp" type="image/webp"><img id="viber" src="./static/img/viber%20.png" alt=""></picture>
+            <picture><source srcset="./static/img/telegram%20.webp" type="image/webp"><img id="telegram" src="./static/img/telegram%20.png" alt=""></picture>
+            <picture><source srcset="./static/img/whatsapp%20.webp" type="image/webp"><img id="whatsapp" src="./static/img/whatsapp%20.png" alt=""></picture>
+        </article>
+
+    </section>
+     
+    <nav class="burger-menu opacity">
+        <ul class="burger-menu__catalog">
+            <li class="burger-menu__item"><a href="#">ДЕФИБРИЛЯТОРЫ</a></li>
+        </ul>
+        <ul class="burger-menu__start-filter">
+            <li class="burger-menu__item"><a href="#">дефибриллятор</a></li>
+        </ul>
+    </nav>
+ 
+    
+<nav class="sub-menu">
+ 
+    <ul class="sub-menu__list sub-menu__left">
+        <li class="sub-menu__item sub-menu__item_active sub-text"><a href="/about-company-page.html">О компании</a></li>
+        <li class="sub-menu__item sub-text"><a href="/manufacture-page.html">Производители </a></li>
+        <li class="sub-menu__item sub-text"><a href="/login-page.html">login-page</a></li>
+        <li class="sub-menu__item sub-text"><a href="/from-registration-page.html">from-registration </a></li>
+        <li class="sub-menu__item sub-text"><a href="/form-set-order-for-goust.page.html">form-set-order</a></li>
+        <li class="sub-menu__item sub-text"><a href="/set-order-for-guest.html">set-order-for-guest</a></li>
+        <li class="sub-menu__item sub-text"><a href="/catalog-page.html">каталог</a></li>
+        <li class="sub-menu__item sub-text"><a href="/send-order-page.html">Доставка</a></li>
+        <li class="sub-menu__item sub-text"><a href="/payment-page.html">Оплата</a></li>
+        <li class="sub-menu__item sub-text"><a href="/news-page.html"> Новости </a></li>
+        <li class="sub-menu__item sub-text"><a href="/requisite-page.html">Реквизиты</a></li>
+        <li class="sub-menu__item sub-text"><a href="/contacts-page.html">Контакты</a></li>
+    </ul>
+    <ul class="sub-menu__right">
+        <li>
+            <a href="/compare-product-page.html" class="sub-menu__element">
+            <img src="./static/img/icons/compare.svg" class="sub-menu__img">
+            <p class="sub-text">Сравнения</p>
+            </a>
+        </li>
+        <li>
+            <a href="./basket-page.html" class="sub-menu__element">
+                <img src="./static/img/icons/shopping-cart.svg" class="sub-menu__img">
+                <p class="sub-text">Корзина</p>
+            </a>
+        </li>
+        <li>
+            <a href="/profile-page.html" class="sub-menu__element">
+                <img src="./static/img/icons/doctor.svg" class="sub-menu__img">
+                <p class="sub-text">Личный кабинет</p>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+</header>
+
+<main class="container">
+    <section class="sections sections_head-left">
+        <div class="sections__header">
+            <h2 class="sections__head">Отзывы</h2>
+        </div>
+        <div class="sections__body basket">
+
+            <button><img src="./static/img/icons/check-printer.svg">Распечатать</button>
+            <div class="basket__cards">
+                <div class="basket__heard-list">
+                    <p>фото</p>
+                    <p>Товар</p>
+                    <p>оценка</p>
+                    <p>комментарий</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="basket__list">
+                    <article class="basket__card basket-card">
+                        <div class="basket-card__col-1">
+                            <input type="checkbox" id="basket-card">
+                            <label for="basket-card"></label>
+                            <picture><source srcset="./static/img/product%20дифы.webp" type="image/webp"><img src="./static/img/product%20дифы.png"></picture>
+                        </div>
+
+                        <h5 class="basket-card__title">
+                            АВТОМАТИЧЕСКИЙ
+                            ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+                        </h5>
+                        <div class="basket-card__score">
+                            <img src="./static/img/icons/Star.svg" alt="">
+                        </div>
+                        <p class="basket-card__comment">
+
+                        </p>
+                    </article>
+                    <article class="basket__card basket-card">
+                        <div class="basket-card__col-1">
+                            <input type="checkbox" id="basket-card">
+                            <label for="basket-card"></label>
+                            <picture><source srcset="./static/img/product%20дифы.webp" type="image/webp"><img src="./static/img/product%20дифы.png"></picture>
+                        </div>
+
+                        <h5 class="basket-card__title">
+                            АВТОМАТИЧЕСКИЙ
+                            ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+                        </h5>
+                        <p class="basket-card__price"><span>17 500</span><span class="basket-card__currency">р</span></p>
+                        <div class="basket-card__amt amt" data-amt="amt">
+                            <button class="amt__subtract" data-amt="subtract">-</button>
+                            <p class="amt__answer" data-amt="answer">1</p>
+                            <button class="amt__add" data-amt="add">+</button>
+                        </div>
+                        <p class="basket-card__price"><span data-amt="sum">17 500</span> <span data-amt="currency" class="basket-card__currency">р</span></p>
+                        <button class="basket-card__del">
+                            <img src="./static/img/icons/basket.svg">
+                        </button>
+                    </article>
+                    <article class="basket__card basket-card">
+                        <div class="basket-card__col-1">
+                            <input type="checkbox" id="basket-card">
+                            <label for="basket-card"></label>
+                            <picture><source srcset="./static/img/product%20дифы.webp" type="image/webp"><img src="./static/img/product%20дифы.png"></picture>
+                        </div>
+
+                        <h5 class="basket-card__title">
+                            АВТОМАТИЧЕСКИЙ
+                            ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+                        </h5>
+                        <p class="basket-card__price"><span>17 500</span><span class="basket-card__currency">р</span></p>
+                        <div class="basket-card__amt amt" data-amt="amt">
+                            <button class="amt__subtract" data-amt="subtract">-</button>
+                            <p class="amt__answer" data-amt="answer">1</p>
+                            <button class="amt__add" data-amt="add">+</button>
+                        </div>
+                        <p class="basket-card__price"><span data-amt="sum">17 500</span> <span data-amt="currency" class="basket-card__currency">р</span></p>
+                        <button class="basket-card__del">
+                            <img src="./static/img/icons/basket.svg">
+                        </button>
+                    </article>
+                    <article class="basket__card basket-card">
+                        <div class="basket-card__col-1">
+                            <input type="checkbox" id="basket-card">
+                            <label for="basket-card"></label>
+                            <picture><source srcset="./static/img/product%20дифы.webp" type="image/webp"><img src="./static/img/product%20дифы.png"></picture>
+                        </div>
+
+                        <h5 class="basket-card__title">
+                            АВТОМАТИЧЕСКИЙ
+                            ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+                        </h5>
+                        <p class="basket-card__price"><span>17 500</span><span class="basket-card__currency">р</span></p>
+                        <div class="basket-card__amt amt" data-amt="amt">
+                            <button class="amt__subtract" data-amt="subtract">-</button>
+                            <p class="amt__answer" data-amt="answer">1</p>
+                            <button class="amt__add" data-amt="add">+</button>
+                        </div>
+                        <p class="basket-card__price"><span data-amt="sum">17 500</span> <span data-amt="currency" class="basket-card__currency">р</span></p>
+                        <button class="basket-card__del">
+                            <img src="./static/img/icons/basket.svg">
+                        </button>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__left">
+        <div class="footer__imgs">
+            <picture><source srcset="./static/img/logo.webp" type="image/webp"><img src="./static/img/logo.png" alt=""></picture>
+            <article class="network">
+                <picture><source srcset="./static/img/viber%20.webp" type="image/webp"><img id="viber" src="./static/img/viber%20.png" alt=""></picture>
+                <picture><source srcset="./static/img/telegram%20.webp" type="image/webp"><img id="telegram" src="./static/img/telegram%20.png" alt=""></picture>
+                <picture><source srcset="./static/img/whatsapp%20.webp" type="image/webp"><img id="whatsapp" src="./static/img/whatsapp%20.png" alt=""></picture>
+            </article>
+        </div>
+
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Реквизиты</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="footer__right">
+        <article class="footer__info info">
+           <div class="info__header">
+               <a href="#" class="order-call" title="Заказать обратный звонок">
+                   <img src="./static/img/icons/phone.svg">Заказать обратный звонок</a>
+           </div>
+            <div class="info__body">
+                Россия, Удмуртская Республика
+                426011, г. Ижевск, ул. Пушкинская 290
+                тел. 8 (3412) 65-08-77
+            </div>
+        </article>
+        <article class="footer__info info">
+            <p class="info__header">
+                Политика конфиденциальности
+            </p>
+            <p class="info__body">
+                ООО «Boksmed» © 2015 - 2022.
+                Сайт носит информационный характер и не является публичной офертой.
+            </p>
+        </article>
+    </div>
+    
+    <div class="footer__button-blow">
+        <button class="button-blow-big">
+            <img src="./static/img/icons/phone_big.svg" alt="">
+        </button>
+        <button class="button-blow-big">
+            <img src="./static/img/icons/phone_big.svg" alt="">
+        </button>
+    </div>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
