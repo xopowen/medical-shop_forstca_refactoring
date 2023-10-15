@@ -2,22 +2,28 @@
 <nav class="sub-menu ">
  
     <ul class="sub-menu__list sub-menu__left">
-        <li class="sub-menu__item sub-menu__item_active sub-text"><a href="/about-company-page.html">О компании</a></li>
-        <li class="sub-menu__item sub-text"><a href="/manufacture-page.html">Производители </a></li>
-        <li class="sub-menu__item sub-text"><a href="/login-page.html">login-page</a></li>
-        <li class="sub-menu__item sub-text"><a href="/from-registration-page.html">from-registration </a></li>
-        <li class="sub-menu__item sub-text"><a href="/form-set-order-for-goust.page.html">form-set-order</a></li>
-        <li class="sub-menu__item sub-text"><a href="/set-order-for-guest.html">set-order-for-guest</a></li>
-        <li class="sub-menu__item sub-text"><a href="/catalog-page.html">каталог</a></li>
-        <li class="sub-menu__item sub-text"><a href="/send-order-page.html">Доставка</a></li>
-        <li class="sub-menu__item sub-text"><a href="/payment-page.html">Оплата</a></li>
-        <li class="sub-menu__item sub-text"><a href="/news-page.html"> Новости </a></li>
-        <li class="sub-menu__item sub-text"><a href="/requisite-page.html">Реквизиты</a></li>
-        <li class="sub-menu__item sub-text"><a href="/contacts-page.html">Контакты</a></li>
+        <li class="sub-menu__item sub-menu__item_active sub-text"><a href="@@webRoot/about-company-page.html">О компании</a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/manufacture-page.html">Производители </a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/catalog-page.html">каталог</a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/send-order-page.html">Доставка</a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/payment-page.html">Оплата</a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/news-page.html"> Новости </a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/requisite-page.html">Реквизиты</a></li>
+        <li class="sub-menu__item sub-text"><a href="@@webRoot/contacts-page.html">Контакты</a></li>
+        <li style="position: relative">
+            <details style="position: absolute;white-space: nowrap; background-color: white;">
+                <summary >extra pages</summary>
+                <li class="sub-menu__item sub-text"><a href="@@webRoot/login-page.html">login-page</a></li>
+                <li class="sub-menu__item sub-text"><a href="@@webRoot/from-registration-page.html">from-registration </a></li>
+                <li class="sub-menu__item sub-text"><a href="@@webRoot/form-set-order-for-goust.page.html">form-set-order</a></li>
+                <li class="sub-menu__item sub-text"><a href="@@webRoot/set-order-for-guest.html">set-order-for-guest</a></li>
+            </details>
+        </li>
+
     </ul>
     <ul class="sub-menu__right">
         <li >
-            <a href="/compare-product-page.html" class="sub-menu__element">
+            <a href="@@webRoot/compare-product-page.html" class="sub-menu__element">
             <img src="@@webRoot/static/img/icons/compare.svg" class="sub-menu__img"/>
             <p class="sub-text">Сравнения</p>
             </a>
@@ -29,7 +35,7 @@
             </a>
         </li>
         <li >
-            <a href="/profile-page.html" class="sub-menu__element">
+            <a href="@@webRoot/profile-page.html" class="sub-menu__element">
                 <img src="@@webRoot/static/img/icons/doctor.svg" class="sub-menu__img"/>
                 <p class="sub-text">Личный кабинет</p>
             </a>
