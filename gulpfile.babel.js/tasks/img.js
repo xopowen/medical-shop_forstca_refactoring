@@ -8,6 +8,9 @@ const newer = require('gulp-newer')//предотвращает лишнее с�
 const webp = require('gulp-webp')
 const gulpIF = require("gulp-if")
 
+
+
+
 const img = (assets,build)=>{
     console.log('work with img'+`:${assets}->${build}`)
     return src(assets)

@@ -6,7 +6,7 @@
             <source  srcset={{  nameImg ~ posfix.pos }} type = {{ posfix.type }} />
         {% endfor %}
 
-        <img src='{{ nameImg ~ ".png" }}' alt = "" />
+        <img loading="lazy" src='{{ nameImg ~ ".png" }}' alt = "" />
     </picture>
 {% endblock %}
 

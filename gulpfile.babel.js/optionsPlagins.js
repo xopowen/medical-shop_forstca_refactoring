@@ -51,6 +51,11 @@ module.exports = {
     imageMin:{verbose:_build||false},
     fonter:{
         formats:['ttf','woff','eot','svg']
+    },
+    imgRetinizeOption:{
+        filter:false,
+        flags:{1: '', 2: '@2x', 4: '@4x'},
+        flagsOut:{1: '', 2: '@2x', 4: '@4x'}
     }
 };
 

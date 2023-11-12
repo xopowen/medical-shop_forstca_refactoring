@@ -23,3 +23,14 @@ const telList = document.querySelectorAll('input[type=tel]')
 new TelNumberMask(telList)
 initShowCatalogFilter()
 
+let button_to_header = document.getElementById('button-to-header')
+
+if(button_to_header){
+    button_to_header.addEventListener('click',()=>{
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior:"smooth"
+        })
+    })
+}

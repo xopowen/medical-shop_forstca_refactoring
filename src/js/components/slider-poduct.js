@@ -13,4 +13,3 @@ const swiper = new Swiper('#slider-product', {
         prevEl: '.slider__navigation_last',
     },
 });
-console.log(swiper)
