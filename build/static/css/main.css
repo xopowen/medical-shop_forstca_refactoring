@@ -217,14 +217,8 @@ span{
 	align-items:center;
 	gap:10px
 }
-.header img,
-.header picture,
-.header source{
-	max-width:100%;
-	-o-object-fit:contain;
-	object-fit:contain
-}
 .header__img{
+	max-width:145px;
 	height:33px;
 	width:145px
 }
@@ -1035,6 +1029,12 @@ button:active{
 }
 .card-catalog__subtext{
 	max-width:320px
+}
+.card-catalog__arrows{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	gap:14px
 }
 .card-catalog__footer{
 	display:-webkit-box;
@@ -2808,7 +2808,7 @@ h2{
 .error{
 	color:red
 }
-@media screen and (min-width:760px){
+@media screen and (min-width:761px){
 	.card-catalog_small:first-child{
 		height:auto;
 		grid-row-end:span 2
@@ -2837,6 +2837,11 @@ h2{
 	}
 	.footer__right{
 		gap:5%
+	}
+	.card-catalog__footer button{
+		-webkit-box-flex:1;
+		-ms-flex-positive:1;
+		flex-grow:1
 	}
 	.catalog__filter,
 	.compare__indicators{
@@ -2892,6 +2897,35 @@ h2{
 	}
 }
 @media (max-width:480px){
+	.header__top{
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap;
+		-webkit-box-pack:end;
+		-ms-flex-pack:end;
+		justify-content:end
+	}
+	.header__main-link{
+		-webkit-box-flex:1;
+		-ms-flex-positive:1;
+		flex-grow:1
+	}
+	.footer__left{
+		-ms-flex-wrap:wrap-reverse;
+		flex-wrap:wrap-reverse
+	}
+	.footer__right{
+		display:none
+	}
+	.card-catalog__body{
+		-webkit-box-align:center;
+		-ms-flex-align:center;
+		align-items:center
+	}
+	.card-catalog_big{
+		-ms-flex-wrap:wrap-reverse;
+		flex-wrap:wrap-reverse;
+		padding:15px
+	}
 	.basket__heard-list{
 		display:none
 	}
@@ -2934,18 +2968,6 @@ h2{
 	.burger-menu{
 		grid-template-columns:auto auto
 	}
-	.footer__left{
-		-ms-flex-wrap:wrap-reverse;
-		flex-wrap:wrap-reverse
-	}
-	.footer__right{
-		display:none
-	}
-	.card-catalog__body{
-		-webkit-box-align:center;
-		-ms-flex-align:center;
-		align-items:center
-	}
 	.card-catalog__footer{
 		width:-webkit-min-content;
 		width:-moz-min-content;
@@ -2953,11 +2975,6 @@ h2{
 		-webkit-box-pack:center;
 		-ms-flex-pack:center;
 		justify-content:center
-	}
-	.card-catalog_big{
-		-ms-flex-wrap:wrap-reverse;
-		flex-wrap:wrap-reverse;
-		padding:15px
 	}
 	.sub-menu__left{
 		max-width:100%;

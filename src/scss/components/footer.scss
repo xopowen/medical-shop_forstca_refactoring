@@ -14,7 +14,7 @@
     @include media-portrait767max{
       gap: 30px;
     }
-    @include media-phones375max{
+    @include media-phones480max{
       flex-wrap: wrap-reverse;
     }
   }
@@ -28,7 +28,7 @@
     @include media-portrait767max{
       gap: 5%;
     }
-    @include media-phones375max{
+    @include media-phones480max{
       display: none;
     }
   }
