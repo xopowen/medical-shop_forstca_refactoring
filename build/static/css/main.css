@@ -1,3 +1,10 @@
+@font-face{
+	font-family:Gilroy;
+	font-style:normal;
+	font-weight:700;
+	font-display:swap;
+	src:local(''),url(../font/Gilroy-Bold.eot),url(../font/Gilroy-Bold.ttf) format("truetype"),url(../font/Gilroy-Bold.svg) format("svg"),url(../font/Gilroy-Bold.eot) format("embedded-opentype"),url(../font/Gilroy-Bold.woff2) format("woff2"),url(../font/Gilroy-Bold.woff) format("woff")
+}
 .card-catalog__head{
 	font:normal 700 min(5vw,28px)/normal Geometria
 }
