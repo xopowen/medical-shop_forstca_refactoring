@@ -66,7 +66,7 @@ const icon =()=>imgModel(PATH.src.ICONS,PATH.build.ICONS)
 const greateFontFile = async ()=>{
     await require("./tasks/clean.js")(PATH.src.SCSS+'fonts.css')
     require('./tasks/greateFontFile')(PATH.build.FONTS+'/*.{oet,ttf,otf,ttc,woff,woff2,svg}',
-        PATH.src.SCSS)
+                                            PATH.src.SCSS)
 
 }
 const fonts =async ()=>{
@@ -76,13 +76,13 @@ const fonts =async ()=>{
 const options = require('./optionsPlagins')
 //watcher
 const watchFun = ()=>{
-    // watch(PATH.src.TWIG,twig).on('all',browser.reload)
-    watch(PATH.src.FONTS ,fonts).on('all',browser.reload)
-    watch(PATH.src.SCSS,scss).on('all',browser.reload)
-    watch(PATH.src.HTML,html).on('all',browser.reload)
-    watch(PATH.src.JS,js).on('all',browser.reload)
-    watch(PATH.src.IMG,img).on('all',browser.reload)
-    watch(PATH.src.ICONS,icon).on('all',browser.reload)
+      // watch(PATH.src.TWIG,twig).on('all',browser.reload)
+        watch(PATH.src.FONTS ,fonts).on('all',browser.reload)
+      watch(PATH.src.SCSS,scss).on('all',browser.reload)
+      watch(PATH.src.HTML,html).on('all',browser.reload)
+      watch(PATH.src.JS,js).on('all',browser.reload)
+      watch(PATH.src.IMG,img).on('all',browser.reload)
+      watch(PATH.src.ICONS,icon).on('all',browser.reload)
 
 
 }
@@ -97,14 +97,14 @@ const watchBrowser = ()=>{
 }
 
 const build = series(
-    clean,fonts,
-    parallel(scss,html,icon,img,js ))   // twig,
+        clean,fonts,
+        parallel(scss,html,icon,img,js ))   // twig,
 
-
+                         
 const dev =  series(
-    build,
-    parallel(watchFun,watchBrowser))
-
+        build,
+        parallel(watchFun,watchBrowser))
+ 
 
 exports.watcher = watchFun;
 exports.clean = clean;

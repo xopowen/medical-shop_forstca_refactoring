@@ -1,6 +1,7 @@
 
 @function percentage($maxValue,$value){
-    @return $value/$maxValue*100%;}
+    @return $value/$maxValue*100%;
+}
 
 $mask-card-wight:916;
 

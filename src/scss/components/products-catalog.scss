@@ -17,13 +17,15 @@
   }
 
   &_active{
-    animation: 5s linear 1 product-body-full forwards ;
+    //animation: 5s linear 1 product-body-full forwards ;
+    max-height:2000px;
   }
   &_close{
-    animation-name: product-body-full;
-    animation-duration: 3s;
-    animation-direction: reverse;
-    animation-timing-function: linear;
+    //animation-name: product-body-full;
+    //animation-duration: 3s;
+    //animation-direction: reverse;
+    //animation-timing-function: linear;
+    max-height: $products_catalog_body-max-height;
   }
  }
 &__button-show{

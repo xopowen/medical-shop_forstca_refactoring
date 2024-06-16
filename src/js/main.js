@@ -3,6 +3,7 @@ import GlobalAnimation from "./components/GlobalAnimation";
 import {CLASS_NAME, EFFECT_CLASS} from "./components/constants";
 import   "./components/slider-poduct";
 import initShowCatalogFilter from "./components/showCatalogFilter";
+import './components/leftMenu.js'
 let globalAnimation = new GlobalAnimation()
 document.querySelectorAll('.opacity').forEach(el=>{
     globalAnimation.observe(el)
