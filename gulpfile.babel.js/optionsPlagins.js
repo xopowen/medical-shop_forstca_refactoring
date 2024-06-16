@@ -58,11 +58,11 @@ module.exports = {
     },
     imgRetinizeOption:{
         filter:false,
-        flags:{1: '', 2: '@2x',3: '@3x', 4: '@4x'},
-        flagsOut:{1: '', 2: '@2x', 4: '@4x'}
+        flags:{1: ''  },
+        flagsOut:{1: '' }
     },
     webpRetinaHtml:{
-        retina:{1: '', 2: '@2x',3: '@3x'},
+        retina:{1: '' },
     }
 };
 
